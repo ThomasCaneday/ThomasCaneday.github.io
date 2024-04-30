@@ -1,0 +1,346 @@
+* {
+    box-sizing: border-box;
+    font-family: Lora;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+}
+
+/* Style the header */
+header {
+    background-color: hsla(0, 0%, 0%, .0);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.home-btn {
+    margin: 10px;
+    font-size: clamp(1vw, 3vw, 1rem);
+}
+.home-logo {
+    /* -webkit-filter: invert(100%); */
+    /* filter: invert(100%); */
+    height: auto;
+    width: 10vw;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsla(0, 0%, 0%, 0);
+    padding: 10px;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-btn {
+    background-color: hsla(0, 0%, 0%, 0);
+    color: #fff;
+    border: 1px solid #fff;
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+.menu-btn:hover {
+    cursor: pointer;
+}
+
+/* Dropdown styles */
+.dropdown {
+    display: none;
+    position: relative;
+    background-color: hsla(0, 0%, 0%, 0);
+    /* box-shadow: 0 8px 16px hsla(0, 0%, 0%, 0.2); */
+}
+
+.dropdown a {
+    display: block;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    border: 1px solid #fff;
+}
+
+/* Style the Landing page (Hero section) */
+
+#backgroundSection {
+    background-image: url('./images/SigEpHome.avif'); /* Replace with your actual background image path */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 0px 0; /* Adjust padding as needed */
+    position: relative;
+    height: 100vh;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.overlay {
+    background: linear-gradient(180deg, rgba(0, 0, 0, .6) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: clamp(1vw, 1rem + 4vw, 5rem);
+    margin: 0;
+    text-shadow:   -1px 1px 0 #000, 
+                    1px 1px 0 #000, 
+                    1px -1px 0 #000, 
+                    -1px -1px 0 #000;
+}
+/* .h2 {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    width: 40vw;
+    height: auto;
+} */
+
+.landing-page-btns {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn {
+    border: 1px solid #fff;
+    padding: 1em;
+    margin: 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Style the Services section */
+#services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+#services h3 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 10rem;
+}
+
+#services ul {
+    display: grid;
+    grid-template-columns: minmax(auto, 1fr) minmax(auto, 1fr);
+    row-gap: 20vh;
+    margin: 3rem;
+    list-style-type: none;
+}
+
+.services-titles {
+    font-weight: bold;
+    font-size: 1.25em;
+    margin-bottom: 15px;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1em;
+}
+.title-container p {
+    color: #fff;
+}
+
+.service-image {
+    height: 90vh;
+    width: auto;
+    margin: 0 5rem;
+    border-radius: 15px;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 14px 28px, rgba(255, 255, 255, 0.22) 0px 10px 10px;
+}
+
+/* Style Founder section */
+#founder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    color: #fff;
+}
+
+#founder h3 {
+    font-size: 2em;
+}
+
+.founder-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 3rem;
+}
+
+.founder-image {
+    height: 25rem;
+    width: auto;
+    margin-bottom: 1rem;
+    border: 1px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.founder-statement {
+    text-align: center;
+    line-height: 2em;
+}
+.founder-statement h4 {
+    margin-bottom: 15px;
+    font-size: 1.25em;
+}
+
+/* Style the form */
+#contact {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+    border-radius: 2rem;
+    padding: 3rem 0rem;
+    box-shadow: rgba(255, 255, 255, 0.46) 0px 3px 6px, rgba(255, 255, 255, 0.23) 0px 3px 6px;
+}
+
+#contact p {
+    text-align: center;
+    margin: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input {
+    padding: 8px;
+    margin-bottom: 10px;
+    /* width: calc(100% - 4rem); */
+    width: 100%;
+}
+
+form textarea {
+    /* width: calc(100% - 4rem); */
+    width: 100%;
+}
+
+.input-button {
+    margin-top: 10px;
+}
+.input-button:hover {
+    cursor: pointer;
+}
+
+/* Style the footer */
+footer {
+    background-color: hsla(0, 0%, 0%, 1);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+}
+
+.socials {
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+.powered {
+    margin-right: 1rem;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .h2 {
+        width: 80vw;
+    }
+    .home-logo {
+        width: 20vw;
+    }
+    .landing-page-btns {
+        flex-wrap: wrap;
+    }
+    .landing-page-btns>* {
+        flex: 1 1 auto;
+    }
+    #services ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0 5px;
+        /* row-gap: 10vh; */
+    }
+    .service-image {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    #contact {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    form {
+        margin: 0 5px;
+        display: flex;
+    }
+    footer {
+        flex-direction: column;
+    }
+}

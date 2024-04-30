@@ -1,9 +1,135 @@
-<html>
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Security-Policy" content="object-src 'none'">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/Asset 1.png" type="image/x-icon">
+    <meta name="description" content="Explore the rugged world of hunting and tradesmanship on our platform. From scholarships to outdoor clothing, we're your go-to resource for everything blue-collar. Join a community passionate about the great outdoors and skilled trades. Embrace the spirit of hard work, morals, and a firm handshake.">
+    <meta name="keywords" content="brattican, hunting, blue collar, scholarship">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Teko&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Thomas Caneday</title>
+    
+</head>
 <body>
-  <h1>Thomas Caneday</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+    
+
+    <header>
+        <a href="index.html" class="home-btn">
+            <p alt="Thomas Caneday Logo" class="home-logo">Thomas Caneday</p>
+            <!-- <img src="./images/bratarw.png" alt="SigEp Home Logo" class="home-logo"> -->
+        </a>
+        <nav>
+          <button onclick="showMenu()" class="menu-btn">Menu</button>
+          <ul class="dropdown">
+            <!-- <li><a href="./services.html">Services</a></li> -->
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <!-- <li><a href="./ambassadors.html">Ambassadors</a></li> -->
+          </ul>
+        </nav>
+    </header>
+<div onclick="hideMenu()">
+    <main id="backgroundSection" class="landing-page">
+        <div class="overlay">
+            <h2>Thomas Caneday</h2>
+            <!-- <img class="h2" src="./images/upBrattican-mtnarw.png" alt="SigEp Home Page Logo"> -->
+            <div class="landing-page-btns">
+                <a href="./about.html" id="changeScholarshipButton" class="btn">About</a>
+                <a href="https://brattican.shop/" target="_blank" rel="noopener noreferrer" id="changeShopButton" class="btn">Resume</a>
+                <a href="./projects.html" id="changeServicesButton" class="btn">Projects</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- <section id="services">
+        <h3>My Services</h3>
+        <ul>
+            <li class="title-container">
+                <p class="services-titles">Senior Portraits</p>
+                <p>
+                    Elevate your senior year with portraits that reflect your personality and commemorate this milestone with timeless elegance.
+                </p>
+            </li>
+            <li>
+                <img src="./images/senior-portrait-service.avif" alt="Senior Portrait Service Image" class="service-image">
+            </li>
+            <li class="title-container">
+                <p class="services-titles">Action Shots</p>
+                <p>
+                    Capture the thrill of the moment with dynamic action shots that freeze time and preserve the excitement of your most memorable experiences.
+                </p>
+            </li>
+            <li>
+                <img src="./images/action-shot-service.avif" alt="Action Shot Service Image" class="service-image">
+            </li>
+            <li class="title-container">
+                <p class="services-titles">Wedding Photos</p>
+                <p>
+                    Crafting timeless memories, our wedding photography services capture the essence of your special day, preserving love, joy, and every precious moment.
+                </p>
+            </li>
+            <li>
+                <img src="./images/wedding-photo-service.avif" alt="Wedding Photos Service Image" class="service-image">
+            </li>
+        </ul>
+    </section>
+
+    <section id="founder">
+        <h3>Founder</h3>
+        
+        <div class="founder-container">
+            <img src="./images/founder-portrait.avif" alt="Professional headshot of Founder" class="founder-image">
+            <div class="founder-statement">
+                <h4>Welcome to [Photography Business Name] - Where Moments Meet Mastery!</h4>
+                <p>
+                    As the founder of [Photography Business Name], I am passionate about capturing timeless moments in every frame. Our journey began with a simple belief: that every photograph, whether grand or intimate, deserves the touch of artistic craftsmanship.
+
+                    At [Photography Business Name], we pride ourselves on merging innovative photographic techniques with a dedication to timeless artistry. Our team is committed to curating visual stories that not only captivate the eye but also encapsulate the essence of cherished memories.
+
+                    From captivating portraits to meticulously crafted compositions, we understand that each photograph is a reflection of your unique narrative. Our commitment to excellence, personalized service, and a profound love for storytelling set us apart.
+
+                    Join us on this visual journey as we transform your moments into lasting memories. Let's redefine your photography experience together!
+                    <br>
+                    [Founder's Name]<br>
+                    Founder, [Business Name]
+                </p>
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Ready to transform your captured moments into visual masterpieces? Reach out to me!</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Leave a Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+            <input type="submit" value="Submit" class="input-button">
+        </form>
+    </section> -->
+
+    <footer>
+        <div class="socials">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/usdsigep" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>Copyright &copy; 2024 USD SigEp. All rights reserved.</p>
+        <p class="powered">Powered by <a href="https://thomascaneday.com/" target="_blank" rel="noopener noreferrer">Thomas Caneday Websites</a></p>
+    </footer>
+</div>
+    <script src="./script.js"></script>
+
 </body>
- 
 </html>
