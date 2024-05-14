@@ -152,6 +152,11 @@ h2 {
     color: #000;
 }
 
+.pdf {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+}
+
 /* Style the Services section */
 #services {
     display: flex;
