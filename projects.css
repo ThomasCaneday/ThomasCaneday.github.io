@@ -95,6 +95,9 @@ body {
 #eight {
     animation: float 3.1s infinite alternate;
 }
+#nine {
+    animation: float 2.95s infinite alternate;
+}
 
 .screen {
     background-color: rgb(0, 150, 200, 15%);
