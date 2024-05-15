@@ -154,7 +154,7 @@ h2 {
 
 .pdf {
     width: 100%;
-    aspect-ratio: 4 / 3;
+    height: 100vh;
 }
 
 /* Style the Services section */
