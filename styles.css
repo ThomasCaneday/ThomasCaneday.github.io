@@ -153,7 +153,7 @@ h2 {
 }
 
 .pdf {
-    width: 100%;
+    width: auto;
     height: 100vh;
 }
 
